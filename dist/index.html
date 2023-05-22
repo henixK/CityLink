@@ -55,14 +55,16 @@
 
   <section id="info" class="w-full hidden">
     <div
-      class="w-full lg:min-h-[60vh] flex flex-wrap items-center lg:flex-nowrap lg:justify-between border-2 border-black">
-      <div class="bg-aereo bg-contain w-full lg:w-1/2 lg:h-[60vh] flex items-center p-5 lg:pl-24 border-2 border-black">
-        <div id="world-container" class=" w-full h-[50vh] lg:block lg:h-[45vh] relative border-2 border-black">
+      class="w-full lg:min-h-[60vh] flex flex-wrap items-center lg:flex-nowrap lg:justify-between ">
+      <div class="w-full lg:w-1/2 lg:h-[60vh] flex items-center p-5 lg:pl-24 relative">
+        <img src="./assets/images/aeroplanino.svg"
+        class="w-full h-[30vh] absolute top-16 left-0 z-10 hidden lg:block" alt="">
+        <div id="world-container" class=" w-full h-[50vh] lg:block lg:h-[45vh] relative ">
         </div>
 
       </div>
-      <div class="w-full lg:w-1/2 lg:h-[60vh] flex items-center p-5 lg:pr-24 border-2 border-black">
-        <div id="summaryCity" class="lg:h-[45vh] border-2 border-black"></div>
+      <div class="w-full lg:w-1/2 lg:h-[60vh] flex items-center p-5 lg:pr-24 ">
+        <div id="summaryCity" class="lg:h-[45vh]"></div>
       </div>
     </div>
 
@@ -82,7 +84,7 @@
           </div>
         </div>
       </div>
-      <div class="w-full lg:w-8/12 h-screen lg:absolute lg:right-0 lg:flex lg:items-center lg:justify-center bg-categories bg-contain bg-right bg-no-repeat z-10">
+      <div class="w-full lg:w-8/12 h-screen lg:absolute lg:right-0 lg:flex lg:items-center lg:justify-center bg-categories bg-cover bg-top lg:bg-contain lg:bg-right bg-no-repeat z-10">
         <div id="score-container" class=" w-full lg:w-3/5 h-[80vh]">
         </div>
         <div id="overall-container" class="w-full lg:w-4/12 h-[30vh] lg:absolute lg:right-0 lg:top-0">
