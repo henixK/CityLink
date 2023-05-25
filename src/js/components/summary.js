@@ -12,7 +12,7 @@ export function summary(cityData) {
     titleEl.classList.add('text-center', 'lg:text-left', 'text-4xl', 'text-[#FA9746]', 'm-4');
 
     const summaryEl = document.createElement('p');
-    summaryEl.classList.add('m-4', 'text-left', 'text-[#667076]', 'text-lg');
+    summaryEl.classList.add('m-4', 'text-left', 'text-[#667076]', 'text-base');
     if (cityData.categories.categories) {
         summaryEl.innerHTML = cityData.categories.summary;
     } else {

@@ -19,7 +19,7 @@ export function barChart(cityData) {
     const height = 600 - margin.top - margin.bottom - (strokeWidth * 2);
     const width = 800 
     const chartWidth = containerWidth - margin.left - margin.right;
-    const chart = svg.append("g").attr("transform", `translate(${margin.left + chartWidth / 2}, ${50})`);
+    const chart = svg.append("g").attr("transform", `translate(${margin.left + chartWidth / 1.8}, ${50})`);
 
 
 
@@ -47,7 +47,7 @@ export function barChart(cityData) {
         .attr("text-anchor", "end")
         .text(d => d.name)
         .style("fill", "#667076")
-        .attr("class", "lg:text-lg", "text-xl");
+        .attr("class", "lg:text-base", "text-xl");
 
     // Creazione delle barre
     chart.selectAll(".bar")

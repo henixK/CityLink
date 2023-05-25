@@ -23,7 +23,33 @@ h2 {
 }
 
 p, span {
-    @apply text-[#676767];
+    @apply text-[#676767] text-base;
+}
+
+.background-header {
+    @apply bg-mobile bg-cover md:bg-mobile md:bg-auto md:h-[90vh] lg:bg-desktop lg:bg-cover lg:bg-right bg-no-repeat;
+}
+
+.logo {
+    @apply absolute top-32 lg:top-8 lg:left-28
+}
+
+@media (max-height: 670px) {
+    .background-header {
+        @apply bg-top
+    }
+    .logo {
+        @apply top-16
+    }
+    #score-container {
+        @apply h-screen
+    }
+    #overall-container {
+        @apply h-[40vh]
+    }
+    #container-scores-overall{
+        @apply h-[140vh]
+    }
 }
 
 input:focus {
