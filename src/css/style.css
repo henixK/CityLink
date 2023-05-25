@@ -38,7 +38,7 @@ header {
 }
 
 @media (max-height: 670px) {
-    .background-header {
+    header {
         @apply bg-top
     }
     .logo {
