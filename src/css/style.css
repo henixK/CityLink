@@ -29,8 +29,8 @@ p, span {
 
 header {
     @apply bg-mobile bg-cover md:bg-mobile md:bg-auto md:h-[90vh] lg:bg-desktop lg:bg-cover lg:bg-right bg-no-repeat;
-    min-height: 100svh;
-    height: 100vh;
+    height: 100svh;
+
 }
 
 .logo {
@@ -38,9 +38,6 @@ header {
 }
 
 @media (max-height: 670px) {
-    .header {
-        min-height: 100svh;
-    }
     .background-header {
         @apply bg-top
     }
