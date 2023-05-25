@@ -26,8 +26,11 @@ p, span {
     @apply text-[#676767] text-base;
 }
 
-.background-header {
+header {
     @apply bg-mobile bg-cover md:bg-mobile md:bg-auto md:h-[90vh] lg:bg-desktop lg:bg-cover lg:bg-right bg-no-repeat;
+    height: 100vh;
+    min-height: 100svh;
+    
 }
 
 .logo {
