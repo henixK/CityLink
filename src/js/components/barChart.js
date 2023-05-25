@@ -75,6 +75,6 @@ export function barChart(cityData) {
                 .attr("dy", ".35em")
                 .text(d => (Math.ceil(d.score_out_of_10)))
                 .style("fill", "#667076")
-                .attr("class", "lg:text-lg", "text-xl");
+                .attr("class", "lg:text-base", "text-xl");
         });
 }
