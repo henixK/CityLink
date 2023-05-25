@@ -9,7 +9,7 @@ module.exports = {
         'logoSite': "url('../assets/images/logo-citylink.svg')", 
         'categories': "url('../assets/images/forma-scores.svg')",
         'mobile': "url('../assets/images/sfondo-mobile.jpg')",
-        'desktop': "url('../assets/images/background-desktop.png')",
+        'desktop': "url('../assets/images/background-desktop.jpg')",
         'mobile-top':"url('../assets/images/onda-top.svg')",
         'overall':"url('../assets/images/overall.svg')",
         'stats':"url('../assets/images/Illustrazione-stats.png')",

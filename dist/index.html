@@ -1,105 +1,151 @@
 <!DOCTYPE html>
-<html lang="en" class="sans">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon_io/favicon.ico"
+    />
+    <title>CityLink</title>
+  <script defer src="bundle.js"></script></head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon.ico" />
-  <title>
-    CityLink
-  </title>
-<script defer src="bundle.js"></script></head>
-
-<body>
-
-  <header
-    class="background-header flex items-center h-screen relative">
-    <nav
-      class="bg-logoSite bg-no-repeat bg-contain bg-center logo w-full h-16 lg:w-60 lg:h-24 ">
-    </nav>
-    <div class="w-full flex items-center justify-center p-10 lg:pl-24 mb-0 lg:mt-14">
-      <div class="w-full md:flex md:justify-center text-center p-5 lg:text-left lg:block text-xl mb-36 lg:mb-20">
-        <h2 class="text-lg lg:block lg:text-4xl mb-5 lg:mb-10 ">
-          A quick glance into cities <br />
-          from all over the world.
-        </h2>
-        <div class="w-full mb-10 hidden lg:block">
-          <p>
-            What is like to live in
-            <span id="cityAnimation" class="border-b-[1px] border-[#676767]"></span>?
-          </p>
-          <p>
-            <strong>Citylink</strong> is a guide for travelers, wanderers
-            and the curious.
-          </p>
-        </div>
-        <div class="w-full md:w-4/12 lg:w-4/12">
-          <p class="mb-2">Where would you like to go?</p>
-          <form id="form" class="relative w-full">
-            <input type="search" id="search-input"
-              class="block p-2.5 w-full z-20 text-sm rounded-full border-2 border-[#E2E2E2]"
-              placeholder="Type city name" required />
-            <button type="submit" id="searchButton"
-              class="w-fit absolute top-1 right-1 text-sm font-medium text-white border-none">
-              <img src="./assets/images/lente.svg" class="w-8" alt="" />
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </header>
-
-
-  <section id="info" class="w-full hidden">
-    <div class="w-full lg:min-h-[80vh] flex flex-wrap items-center lg:flex-nowrap lg:justify-between ">
-      <div class="w-full lg:w-1/2 lg:h-[60vh] flex items-center p-5 lg:pl-24 relative">
-        <img src="./assets/images/aeroplanino.svg" class="w-full h-[30vh] absolute top-16 left-0 z-10 hidden lg:block"
-          alt="">
-        <div id="world-container" class=" w-full h-[50vh] hidden md:block lg:block lg:h-[45vh] relative ">
-        </div>
-
-      </div>
-      <div class="w-full lg:w-1/2 lg:h-[60vh] flex items-center p-10 lg:pr-24 ">
-        <div id="summaryCity" class="lg:h-[45vh]"></div>
-      </div>
-    </div>
-
-
-  </section>
-
-  <section id="categories" class="hidden">
-    <div class="bg-[#F6F9FF] lg:bg-inherit w-full lg:min-h-screen flex items-center flex-wrap">
-      <div class=" w-full lg:w-5/12 lg:h-[90vh] lg:flex-nowrap text-center lg:relative z-20">
-        <div class="w-full h-max lg:min-h-full text-left p-5 lg:pl-[100px]">
-          <h1 class="text-2xl lg:text-5xl">Life quality scores</h1>
-          <p class="mt-8 text-base">We know it can be tough to choose the place to live and work. That’s why we
-            collected data from statistical surveys and polls about income, living costs & quality of life. Pick your
-            preferences and find out which city matches your needs!</p>
-          <div class="w-full lg:w-max max-h-full mt-6 lg:absolute lg:bottom-0">
-            <img class="w-full lg:w-4/5 z-10" src="./assets/images/Illustrazione-stats.png" alt="">
+  <body>
+    <header
+      class="bg-mobile bg-cover md:bg-mobile md:bg-auto md:h-screen lg:bg-desktop lg:bg-cover lg:bg-right bg-no-repeat flex items-center relative"
+    >
+      <nav
+        class="bg-logoSite bg-no-repeat bg-contain bg-center logo w-full h-16 lg:w-60 lg:h-24"
+      ></nav>
+      <div
+        class="w-full flex items-center justify-center p-10 lg:pl-24 mb-0 lg:mt-14"
+      >
+        <div
+          class="w-full md:flex md:justify-center text-center p-5 lg:text-left lg:block text-xl mb-36 lg:mb-20"
+        >
+          <h2 class="text-lg lg:block lg:text-4xl mb-5 lg:mb-10">
+            A quick glance into cities <br />
+            from all over the world.
+          </h2>
+          <div class="w-full mb-10 hidden lg:block">
+            <p>
+              What is like to live in
+              <span
+                id="cityAnimation"
+                class="border-b-[1px] border-[#676767]"
+              ></span
+              >?
+            </p>
+            <p>
+              <strong>Citylink</strong> is a guide for travelers, wanderers and
+              the curious.
+            </p>
+          </div>
+          <div class="w-full md:w-4/12 lg:w-4/12">
+            <p class="mb-2">Where would you like to go?</p>
+            <form id="form" class="relative w-full">
+              <input
+                type="search"
+                id="search-input"
+                class="block p-2.5 w-full z-20 text-sm rounded-full border-2 border-[#E2E2E2]"
+                placeholder="Type city name"
+                required
+              />
+              <button
+                type="submit"
+                id="searchButton"
+                class="w-fit absolute top-1 right-1 text-sm font-medium text-white border-none"
+              >
+                <img src="./assets/images/lente.svg" class="w-8" alt="" />
+              </button>
+            </form>
           </div>
         </div>
       </div>
+    </header>
+
+    <section id="info" class="w-full hidden">
       <div
-        class="w-full lg:w-8/12 h-[110vh] md:h-screen lg:h-screen lg:absolute lg:right-0 lg:flex lg:items-center lg:justify-center lg:bg-categories bg-top lg:bg-contain lg:bg-right bg-no-repeat z-10">
-        <div id="score-container" class=" w-full lg:w-3/5 h-[80vh] lg:h-[80vh] md:h-[70vh]">
+        class="w-full lg:min-h-[80vh] flex flex-wrap items-center lg:flex-nowrap lg:justify-between"
+      >
+        <div
+          class="w-full lg:w-1/2 lg:h-[60vh] flex items-center p-5 lg:pl-24 relative"
+        >
+          <img
+            src="./assets/images/aeroplanino.svg"
+            class="w-full h-[30vh] absolute top-16 left-0 z-10 hidden lg:block"
+            alt=""
+          />
+          <div
+            id="world-container"
+            class="w-full h-[50vh] hidden md:block lg:block lg:h-[45vh] relative"
+          ></div>
         </div>
-        <div id="overall-container" class="w-full lg:w-4/12 h-[25vh] lg:absolute lg:right-0 lg:top-0">
+        <div
+          class="w-full lg:w-1/2 lg:h-[60vh] flex items-center p-10 lg:pr-24"
+        >
+          <div id="summaryCity" class="lg:h-[45vh]"></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-
-  <footer class="bg-white m-2 lg:m-4">
-    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-      <div class="sm:flex sm:items-center sm:justify-between">
+    <section id="categories" class="hidden">
+      <div
+        class="bg-[#F6F9FF] lg:bg-inherit w-full lg:min-h-screen flex items-center flex-wrap"
+      >
+        <div
+          class="w-full lg:w-5/12 lg:h-[90vh] lg:flex-nowrap text-center lg:relative z-20"
+        >
+          <div class="w-full h-max lg:min-h-full text-left p-10 lg:pl-[100px]">
+            <h1 class="text-2xl lg:text-4xl">Life quality scores</h1>
+            <p class="mt-8 text-base">
+              We know it can be tough to choose the place to live and work.
+              That’s why we collected data from statistical surveys and polls
+              about income, living costs & quality of life. Pick your
+              preferences and find out which city matches your needs!
+            </p>
+            <div
+              class="w-full lg:w-max max-h-full mt-6 lg:absolute lg:bottom-0"
+            >
+              <img
+                class="w-full lg:w-4/5 z-10"
+                src="./assets/images/Illustrazione-stats.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          id="container-scores-overall"
+          class="w-full lg:w-8/12 h-[110vh] md:h-screen lg:h-screen lg:absolute lg:right-0 lg:flex lg:items-center lg:justify-center lg:bg-categories bg-top lg:bg-contain lg:bg-right bg-no-repeat z-10"
+        >
+          <div
+            id="score-container"
+            class="w-full lg:w-3/5 h-[80vh] lg:h-[80vh] md:h-[70vh]"
+          ></div>
+          <div
+            id="overall-container"
+            class="w-full lg:w-4/12 h-[25vh] lg:absolute lg:right-0 lg:top-0"
+          ></div>
+        </div>
       </div>
-      <span class="block text-lg sm:text-center dark:text-gray-400">Designed by Allison and Developed by Kevin | <a
-          href="https://start2impact-citylink.netlify.app/" class="hover:underline">CityLink</a>.</span>
-    </div>
-  </footer>
-</body>
+    </section>
 
+    <footer class="bg-white m-2 lg:m-4">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between"></div>
+        <span class="block text-lg sm:text-center dark:text-gray-400"
+          >Designed by Allison and Developed by Kevin |
+          <a
+            href="https://start2impact-citylink.netlify.app/"
+            class="hover:underline"
+            >CityLink</a
+          >.</span
+        >
+      </div>
+    </footer>
+  </body>
 </html>
