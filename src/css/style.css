@@ -32,15 +32,15 @@ header {
 }
 
 .logo {
-    @apply absolute top-32 lg:top-8 lg:left-28
+    @apply bg-logoSite bg-no-repeat bg-contain bg-center absolute sm:top-28 top-24 lg:top-8 lg:left-28
 }
 
 @media (max-height: 670px) {
     header {
-        @apply bg-[center_top_4rem]
+        @apply bg-[top_4rem]
     }
     .logo {
-        @apply top-[4.5rem]
+        @apply top-[5rem]
     }
     #score-container {
         @apply h-screen
