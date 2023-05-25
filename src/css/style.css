@@ -32,7 +32,7 @@ header {
 }
 
 .logo {
-    @apply bg-logoSite bg-no-repeat bg-contain bg-center absolute sm:top-28 top-24 lg:top-8 lg:left-28
+    @apply bg-logoSite bg-no-repeat bg-contain bg-center absolute top-[7.5rem] lg:top-8 lg:left-28
 }
 
 @media (max-height: 670px) {
