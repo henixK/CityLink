@@ -37,7 +37,7 @@ header {
 
 @media (max-height: 670px) {
     header {
-        @apply bg-[center_bottom_4rem]
+        @apply bg-[center_top_4rem]
     }
     .logo {
         @apply top-[4.5rem]
