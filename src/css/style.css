@@ -40,11 +40,14 @@ header {
 }
 
 @media (max-height: 670px) {
+    .header {
+        min-height: 100dvh;
+    }
     .background-header {
         @apply bg-top
     }
     .logo {
-        @apply top-14
+        @apply top-[4.5rem]
     }
     #score-container {
         @apply h-screen
