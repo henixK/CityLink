@@ -4,8 +4,9 @@
 @tailwind utilities;
 
 
-
+html,
 body {
+    height: 100%;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -43,7 +44,7 @@ header {
         @apply bg-top
     }
     .logo {
-        @apply top-16
+        @apply top-14
     }
     #score-container {
         @apply h-screen
