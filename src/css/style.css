@@ -28,8 +28,9 @@ p, span {
 
 header {
     @apply bg-mobile bg-cover md:bg-mobile md:bg-auto md:h-[90vh] lg:bg-desktop lg:bg-cover lg:bg-right bg-no-repeat;
+    min-height: 100dvh;
     height: 100vh;
-    min-height: 100svh;
+
     
 }
 
