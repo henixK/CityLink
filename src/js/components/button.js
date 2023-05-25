@@ -1,32 +1,39 @@
-import * as d3 from 'd3';
-import {getCityData } from "./api.js";
+import { selectAll } from 'd3-selection';
+import { getCityData } from "./api.js";
 import { summary } from "./summary.js";
 import { worldMap } from "./worldMap.js";
-import { barChart } from './barChart.js';
-import { overall } from './overallScore.js';
-
 
 const form = document.getElementById('form');
+const searchInput = document.getElementById('search-input');
+const categories = document.getElementById('categories');
+const info = document.getElementById('info');
+const wave = document.getElementById('wave');
+
 form.addEventListener('submit', searchCity);
 
 export async function searchCity(event) {
     event.preventDefault();
-    d3.selectAll("svg").remove();
+    selectAll("svg").remove();
 
-    const searchInput = document.getElementById('search-input');
-    const categories = document.getElementById('categories')
     const city = searchInput.value;
-    const info = document.getElementById('info');
+
     info.classList.remove('hidden');
     info.classList.add('block');
     categories.classList.remove('hidden');
     categories.classList.add('block');
-    info.scrollIntoView({ behavior: 'smooth' });
 
+    await generateCityData(city);
+}
+
+async function generateCityData(city) {
     try {
         const cityData = await getCityData(city);
         summary(cityData);
         worldMap(cityData);
+
+        info.scrollIntoView({ behavior: 'smooth' });
+        wave.classList.add('lg:block');
+        wave.classList.remove('lg:hidden');
     } catch (error) {
         console.log(error);
     }
