@@ -16,7 +16,7 @@ h2 {
 }
 
 h1 {
-    @apply font-bold text-lg tracking-tighter lg:leading-[3.5rem] lg:text-[2.375em];
+    @apply font-bold text-xl tracking-tighter lg:leading-[3.5rem] lg:text-[2.375em];
 }
 
 h2 {
