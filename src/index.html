@@ -17,10 +17,10 @@
     <nav class="logo w-full h-16 lg:w-60 lg:h-24"></nav>
     <div class="w-full flex items-center justify-center p-10 lg:pl-24 mb-0 lg:mt-14">
       <div class="w-full md:flex md:justify-center text-center p-5 lg:text-left lg:block text-xl mb-28 lg:mb-20">
-        <h2 class="text-lg lg:block lg:text-4xl mb-5 lg:mb-10">
+        <h1 class="lg:block mb-5 lg:mb-10">
           A quick glance into cities <br />
           from all over the world.
-        </h2>
+        </h1>
         <div class="w-full mb-10 hidden lg:block">
           <p>
             What is like to live in
@@ -45,47 +45,51 @@
         </div>
       </div>
     </div>
-    <div id="wave" class="lg:bg-wave lg:bg-white lg:bg-cover lg:bg-no-repeat lg:hidden lg:absolute lg:bottom-0 lg:w-full lg:h-[10vh]"></div>
+    <div id="wave"
+      class="lg:bg-wave lg:bg-white lg:bg-cover lg:bg-no-repeat lg:hidden lg:absolute lg:bottom-0 lg:w-full lg:h-[8vh]">
+    </div>
   </header>
 
   <section id="info" class="w-full hidden">
-    <div class="w-full lg:min-h-[80vh] flex flex-wrap items-center lg:flex-nowrap lg:justify-between">
+    <div class="w-full lg:min-h-[60vh] flex flex-wrap items-center lg:flex-nowrap lg:justify-between">
       <div class="w-full lg:w-1/2 lg:h-[60vh] flex items-center p-5 lg:pl-24 relative">
         <img src="./assets/images/aeroplanino.svg" class="w-full h-[30vh] absolute top-16 left-0 z-10 hidden lg:block"
           alt="" />
-        <div id="world-container" class="w-full h-[50vh] hidden md:block lg:block lg:h-[45vh] relative"></div>
+        <map id="world-container" class="w-full h-[50vh] hidden md:block lg:block lg:h-[45vh] relative"></map>
       </div>
       <div class="w-full lg:w-1/2 lg:h-[60vh] flex items-center p-10 lg:pr-24">
-        <div id="summaryCity" class="lg:h-[45vh]"></div>
+        <article id="summaryCity" class="lg:h-[45vh]"></article>
       </div>
     </div>
   </section>
 
   <section id="categories" class="hidden relative lg:h-auto border-2 border-white">
-      <div class="lg:hidden w-full h-[10vh] lg:bg-inherit bg-mobile-top bg-cover absolute top-0"></div>
-        <div class="  w-full lg:min-h-screen flex items-center flex-wrap mt-[10vh] lg:m-0">
-          <div class="bg-[#F6F9FF] lg:bg-white w-full lg:w-5/12 lg:h-[90vh] lg:flex-nowrap text-center lg:relative z-20">
-            <div class="w-full h-max lg:min-h-full text-left p-10 lg:pl-[100px]">
-              <h1 class="text-2xl lg:text-4xl">Life quality scores</h1>
-              <p class="mt-8 text-base">
-                We know it can be tough to choose the place to live and work.
-                That’s why we collected data from statistical surveys and polls
-                about income, living costs & quality of life. Pick your
-                preferences and find out which city matches your needs!
-              </p>
-              <div class="w-full lg:w-max max-h-full mt-6 lg:absolute lg:bottom-0">
-                <img class="w-full lg:w-4/5 z-10" src="./assets/images/Illustrazione-stats.png" alt="" />
+    <div class="lg:hidden w-full h-[10vh] lg:bg-inherit bg-mobile-top bg-cover absolute top-0"></div>
+    <div class="w-full lg:min-h-screen flex items-center flex-wrap mt-[10vh] lg:m-0">
+      <div
+        class="bg-[#F6F9FF] lg:bg-white w-full lg:w-5/12 lg:h-[90vh] lg:flex-nowrap text-center lg:relative">
+        <div class="w-full h-max lg:min-h-full text-left p-10 lg:pl-[100px]">
+          <h1 class="">Life quality scores</h1>
+          <p class="mt-8 text-base">
+            We know it can be tough to choose the place to live and work.
+            That’s why we collected data from statistical surveys and polls
+            about income, living costs & quality of life. Pick your
+            preferences and find out which city matches your needs!
+          </p>
+          <div class="w-full lg:w-max max-h-full mt-6 lg:absolute lg:bottom-0 z-30">
+            <img class="w-full lg:w-4/5" src="./assets/images/Illustrazione-stats.png" alt="" />
           </div>
         </div>
       </div>
       <div id="container-scores-overall"
-        class="  w-full lg:w-8/12 h-[105vh] md:h-screen lg:h-screen lg:absolute lg:right-0 lg:flex lg:items-center lg:justify-center lg:bg-categories bg-top lg:bg-contain lg:bg-right bg-no-repeat z-10">
-        <div id="score-container" class="bg-[#F6F9FF] lg:bg-inherit w-full lg:w-3/5 h-[80vh] lg:h-[80vh] md:h-[70vh] relative">
-        </div>
-        <div id="overall-container" class="bg-inherit w-full lg:w-4/12 h-[25vh] absolute lg:right-0 lg:top-0 ">
-          <div class="lg:hidden bg-mobile-bottom bg-cover bg-no-repeat w-full h-[15vh] absolute top-0 -z-20"></div>
-        </div>
+      class="  w-full lg:w-8/12 h-[105vh] md:h-screen lg:h-screen lg:absolute lg:right-0 lg:flex lg:items-center lg:justify-center lg:bg-categories bg-top lg:bg-contain lg:bg-right bg-no-repeat z-10">
+      <div id="score-container"
+        class="bg-[#F6F9FF] lg:bg-inherit w-full lg:w-3/5 h-[80vh] lg:h-[80vh] md:h-[70vh] relative">
       </div>
+      <div id="overall-container" class="bg-inherit w-full lg:w-4/12 h-[25vh] absolute lg:right-0 lg:top-0 ">
+        <div class="lg:hidden bg-mobile-bottom bg-cover bg-no-repeat w-full h-[15vh] absolute top-0 -z-20"></div>
+      </div>
+    </div>
     </div>
   </section>
 
