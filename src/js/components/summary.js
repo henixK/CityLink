@@ -7,7 +7,7 @@ const summaryCity = document.getElementById('summaryCity');
 
 export function summary(cityData) {
     summaryCity.innerHTML = '';
-    const titleEl = document.createElement('h1');
+    const titleEl = document.createElement('h2');
     titleEl.textContent = cityData.name;
     titleEl.classList.add('text-center', 'lg:text-left', 'text-[#FA9746]', 'm-4');
 

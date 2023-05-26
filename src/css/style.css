@@ -16,11 +16,11 @@ h2 {
 }
 
 h1 {
-    @apply font-extrabold text-lg tracking-tighter lg:leading-[3.5rem] lg:text-[2.375em];
+    @apply font-bold text-lg tracking-tighter lg:leading-[3.5rem] lg:text-[2.375em];
 }
 
 h2 {
-    @apply font-bold;
+    @apply font-extrabold text-lg tracking-tighter lg:leading-[3.5rem] lg:text-[2.375em];
 }
 
 p, span {
