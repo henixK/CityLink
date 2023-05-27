@@ -1,27 +1,37 @@
-const cityList = ["Rome", "London", "New York", "Amsterdam", "Paris", "Tokyo"];
-const el = document.getElementById("cityAnimation");
-
-let cityIndex = 0;
-let charIndex = 0;
-
-function type() {
-    if (cityIndex === cityList.length) {
-        cityIndex = 0;
-    }
-
-    const currentCity = cityList[cityIndex];
-    const currentText = currentCity.substring(0, charIndex);
-
-    el.textContent = `${currentText}`;
-
-    charIndex++;
-
-    if (charIndex > currentCity.length) {
-        cityIndex++;
-        charIndex = 0;
-    }
-
-    setTimeout(type, 700);
+function sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-type();
+const phrases = ["Rome", "London", "New York", "Amsterdam", "Paris", "Tokyo"].map(phrase => phrase + "?");
+const el = document.getElementById("typewriter");
+
+let sleepTime = 100;
+let curPhraseIndex = 0;
+
+const writeLoop = async () => {
+    while (true) {
+        let curWord = phrases[curPhraseIndex];
+
+        for (let i = 0; i < curWord.length; i++) {
+            el.innerText = curWord.substring(0, i + 1);
+            await sleep(sleepTime);
+        }
+
+        await sleep(sleepTime * 10);
+
+        for (let i = curWord.length; i >= 0; i--) {
+            el.innerText = curWord.substring(0, i);
+            await sleep(sleepTime);
+        }
+
+        await sleep(sleepTime * 5);
+
+        if (curPhraseIndex === phrases.length - 1) {
+            curPhraseIndex = 0;
+        } else {
+            curPhraseIndex++;
+        }
+    }
+};
+
+writeLoop();

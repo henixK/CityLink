@@ -23,8 +23,21 @@ h2 {
     @apply font-extrabold text-4xl lg:tracking-tighter lg:leading-[3.5rem] lg:text-[2.375em];
 }
 
-p, span {
+p,
+span {
     @apply text-[#676767] text-base;
+}
+
+#typewriter {
+    position: relative;
+    display: inline-block;
+}
+
+#border {
+    bottom: 3px;
+    width: 120px;
+    height: 1px;
+    @apply absolute right-0 bg-[#676767]
 }
 
 header {
@@ -39,16 +52,20 @@ header {
     header {
         @apply bg-[top_4rem]
     }
+
     .logo {
         @apply top-[5rem]
     }
+
     #score-container {
         @apply h-screen
     }
+
     #overall-container {
         @apply h-[40vh]
     }
-    #container-scores-overall{
+
+    #container-scores-overall {
         @apply h-[140vh]
     }
 }
@@ -86,8 +103,6 @@ input:focus {
         opacity: 0.1;
     }
 }
-
-
 
 @media(min-width: 1024px) {
 
