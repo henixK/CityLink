@@ -3,6 +3,11 @@
 
 Citylink is a web application developed as a project for start2impact. It provides users with information and visualizations for different cities around the world. The application utilizes the Teleport API to fetch city data, including scores and categories related to various aspects of a city's livability.
 
+## Overview
+
+![](![screencapture-start2impact-citylink-netlify-app-2023-05-28-23_04_34](https://github.com/henixK/CityLink/assets/106398555/4163446e-e576-4767-96de-a71fa3ee7d65)
+)
+
 
 ## Technologies Used
 
