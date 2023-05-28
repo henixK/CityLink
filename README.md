@@ -5,7 +5,8 @@ Citylink is a web application developed as a project for start2impact. It provid
 
 ## Overview
 
-![]((!)[screencapture-start2impact-citylink-netlify-app-2023-05-28-23_04_34](https://github.com/henixK/CityLink/assets/106398555/4163446e-e576-4767-96de-a71fa3ee7d65))
+![screencapture-start2impact-citylink-netlify-app-2023-05-28-23_04_34](https://github.com/henixK/CityLink/raw/main/assets/106398555/4163446e-e576-4767-96de-a71fa3ee7d65.png)
+
 
 
 
