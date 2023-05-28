@@ -40,6 +40,7 @@ async function generateCityData(city) {
         wave.classList.add('lg:block');
         wave.classList.remove('lg:hidden');
     } catch (error) {
+        console.log(error)
         const screenSize = window.innerWidth;
         if (screenSize < 600) {
             errore.textContent = "City not found. ";
