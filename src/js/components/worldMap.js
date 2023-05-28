@@ -11,7 +11,7 @@ export function worldMap(cityData) {
     const svg = d3.select("#world-container")
         .append("svg")
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", `0 0 ${mapContainerWidth} ${mapContainerHeight}`)
+        .attr("viewBox", `0 0 ${mapContainerWidth} ${mapContainerHeight}`);
 
     // Set different projection translations for mobile and desktop
     let projectionTranslate = [mapContainerWidth / 2, mapContainerHeight / 1.6];
@@ -42,7 +42,7 @@ export function worldMap(cityData) {
         d3.selectAll(".fixed-circle").remove();
         d3.selectAll(".radar-circle").remove();
 
-        // crea il cerchio iniziale
+        // Create the initial fixed circle
         const fixedCircle = svg.append("g")
             .append("circle")
             .attr("class", "fixed-circle")
@@ -51,28 +51,32 @@ export function worldMap(cityData) {
             .attr("r", 4)
             .style("fill", "#FA9746");
 
+        // Create the radar circle
         const radarCircle = svg.append("g")
             .append("circle")
             .attr("class", "radar-circle")
             .attr("cx", projection(coordinates)[0])
             .attr("cy", projection(coordinates)[1])
-            .attr("r", 0) // inizia con un raggio di 0
+            .attr("r", 0) 
             .style("stroke", "#FA9746")
             .style("stroke-width", 2)
             .style("fill", "none")
             .style("opacity", 0.5);
 
+        // Function to animate the radar circle
         function animateRadar() {
             radarCircle
-                .attr("r", 0) // inizia con un raggio di 0
+                .attr("r", 0) 
                 .style("opacity", 0.5)
                 .transition()
-                .duration(2000) // durata in millisecondi
-                .ease(d3.easeLinear) // rende l'animazione lineare
-                .attr("r", 15) // dimensione finale del radar
-                .style("opacity", 0) // diminuisci l'opacità del radar mentre cresce
-                .on("end", animateRadar); // ripeti l'animazione quando è finita
+                .duration(2000) 
+                .ease(d3.easeLinear)
+                .attr("r", 15) 
+                .style("opacity", 0) 
+                .on("end", animateRadar); 
         }
-        animateRadar()
-    })
+
+        // Start the radar animation
+        animateRadar();
+    });
 }
