@@ -33,8 +33,6 @@ To deploy the project, follow the instructions below:
 
 ## Authors
 
-
-This project wasdesigned by my friend Allison Salvador and developed by
 - Developed by [Kevin Castaneda Bautista](https://github.com/henixK)
 - Designed by [Allison Salvador](https://www.instagram.com/opus.spicatum/)
 
