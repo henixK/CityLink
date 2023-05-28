@@ -7,7 +7,7 @@ Citylink is a web application developed as a project for start2impact. It provid
 ## Technologies Used
 
 
-- [HTML5: Markup language for structuring the web application.](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+- [![My Skills](https://skillicons.dev/icons?i=js,html,css,tailwind, webpack)](https://skillicons.dev)
 - CSS (Tailwind CSS): CSS framework used for styling and layout.
 - JavaScript: Programming language for the client-side logic and interactivity.
 - D3.js: JavaScript library for creating interactive data visualizations.
